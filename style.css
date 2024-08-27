@@ -1,0 +1,165 @@
+:root {/*Colores base y variables globales*/
+    --fondo-color: #2c2c2c;
+    --texto-color: #ffffff;
+    --borde-texto-color: #ffffff;
+    --borde-boton-color: #ff9500;
+    --fondo-header-color: #1a1a1a;
+    --boton-fondo-color: #4a4a4a;
+    --boton-fondo-hover-color: #ff9500;
+    --boton-texto-color: #ffffff;
+}
+
+body {/*Ajuste de estilo para el body*/
+    background-image: url('./imagenes/fondo.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {/*Ajuste de estilo para el encabezado*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--fondo-header-color);
+    box-sizing: border-box;
+    color:var(--texto-color);
+}
+
+#logo {/*dimensiones del logo*/
+    width: 115px;
+    height: auto;
+    margin-right: 20px;
+}
+
+h1 {/*estilo del titulo*/
+    margin: 0;
+    font-size: 24px;
+}
+.Copiar {/*ajustes del boton copiar*/
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+   
+}
+.Textos {/*Ajuste del Espacio de texto*/
+    
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 30px; /* Aumentar la separación entre el header y los cuadros de texto */
+}
+
+.left-panel, .right-panel {/*Ajuste panel izquierdo y derecho*/
+    width: 48%;
+    padding: 30px; /* Aumentar el padding para agrandar los cuadros */
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    margin: 20px; /* Añadir margen para separar más los paneles */
+}
+
+textarea {/*Estilo del textarea*/
+    width: 100%;
+    height: 200px; /* Aumentar la altura del cuadro de texto */
+    margin: 20px 0; /* Aumentar el margen superior e inferior para más separación */
+    padding: 15px; /* Aumentar padding interno para una mejor apariencia */
+    background-color: var(--fondo-color);
+    border: 2px solid var(--borde-texto-color);
+    color: var(--texto-color);
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.Botones {/*Contenedor para botones*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {/*Estilo de los botones*/
+    flex: 1;
+    padding: 10px;
+    margin: 10px 5px;
+    background-color: var(--boton-fondo-color);
+    border: 2px solid var(--borde-boton-color);
+    color: var(--boton-texto-color);
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {/*Estilo del boton para pasar el mouse*/
+    background-color: var(--boton-fondo-hover-color);
+    color: var(--fondo-color);
+}
+
+footer {/*Estilo y alineación del footer */
+    background-color: var(--fondo-header-color);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: auto;
+    color: var(--borde-texto-color);
+}
+
+.social-Botones {/*ajuste para los botenes del social*/
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-Botones button {/*ajuste para los botenes del social*/
+    margin: 0 10px;
+    background-color: var(--boton-fondo-color);
+    border: 2px solid var(--borde-boton-color);
+    color: var(--boton-texto-color);
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-Botones button:hover {/*señalador botones social*/
+    background-color: var(--boton-fondo-hover-color);
+    color: var(--fondo-color);
+}
+
+.right-panel {/*margen de la deerecha*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.right-panel img {/*imagen del marco de la derecha*/
+    width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+}
+@media (max-width: 1200px) { /*ajuste para diferentes dispositivos*/
+    .Textos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-panel, .right-panel {
+        width: auto; /* Ajusta a pantalla completa en dispositivos móviles */
+        margin-bottom: var(--margin-large);
+    }
+
+    textarea {
+        height: 150px; /* Ajusta el tamaño del textarea en pantallas más pequeñas */
+    }
+}

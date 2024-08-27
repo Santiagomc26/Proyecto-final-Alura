@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header>
+    <!--Encabezado de la pagina-->
+        <img src="./imagenes/hacker.jpeg" alt="Logotipo de hacker" id="logo">
+        <h1>Encriptador</h1>
+    </header>
+
+    <section class="Textos">
+    <!--Implementacion de los textarea para poder escribir-->
+        <div class="left-panel">
+            <textarea class="inicial" placeholder="Ingrese el texto aquí..."></textarea>
+            <div class="Botones">
+                <!--Botones encriptar y desencriptar-->
+                <button onclick="botonEncriptar()">Encriptar</button>
+                <button onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+            <p>🔒 Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="right-panel">
+            <textarea class="mensaje" placeholder="Ningún mensaje fue encontrado Ingresa el texto que desees encriptar o desencriptar."></textarea>
+            <img src="./imagenes/dectetive.png" alt="Detective con lupa buscando la frase">
+            
+            <button id="botonCopiar" class="Copiar">Copiar</button>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>Creado por Santiago Muñoz Córdoba</p>
+    <!--Botones del social-->
+        <div class="social-Botones">
+            <a href="https://github.com/">
+                <button type="button">Github</button>
+            </a>
+            <a href="https://www.youtube.com/">
+                <button type="button">Youtube</button>
+            </a>
+               <a href="https://www.linkedin.com/in/santiago-mu%C3%B1oz-c%C3%B3rdoba-18a241263/">
+                <button type="button">LinkedIn</button>
+        </a>
+        </div>
+    </footer>
+<!--conexion con la parte de javascript -->
+    <script src="./app.js"></script>
+</body>
+</html>
